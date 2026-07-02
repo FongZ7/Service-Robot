@@ -12,8 +12,8 @@ class SlidePopupImport(ctk.CTkFrame):
         screen_w = parent.winfo_width() or 480
         screen_h = parent.winfo_height() or 320
 
-        self.popup_w = min(int(screen_w * 0.90), 550)
-        self.popup_h = min(int(screen_h * 0.90), 380)
+        self.popup_w = 550
+        self.popup_h = 440
 
         self.configure(
             fg_color="#035E5A",

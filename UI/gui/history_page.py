@@ -78,7 +78,7 @@ class HistoryPage(ctk.CTkFrame):
         self.return_main_btn.place(relx=0.5, rely=0.90, anchor="center")
 
         try:
-             self.return_main_btn.configure(width=200, height=50, font=("Noto Sans Thai", 18, "bold"), corner_radius=25)
+             self.return_main_btn.configure(width=150, height=45, font=("Noto Sans Thai", 18, "bold"), corner_radius=15)
         except:
              pass 
 

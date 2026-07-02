@@ -7,7 +7,7 @@ class SlidePopupExport(ctk.CTkFrame):
         super().__init__(parent)
         
         self.popup_w = 550
-        self.popup_h = 380
+        self.popup_h = 440
 
         self.configure(
             fg_color="#035E5A", 
