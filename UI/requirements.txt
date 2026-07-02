@@ -1,0 +1,11 @@
+certifi==2024.6.2
+charset-normalizer==3.3.2
+customtkinter==5.2.2
+darkdetect==0.8.0
+idna==3.7
+numpy==1.24.4
+opencv-python==4.10.0.84
+packaging==24.1
+pillow==10.3.0
+requests==2.32.3
+urllib3==2.2.2
