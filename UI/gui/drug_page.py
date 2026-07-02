@@ -42,13 +42,13 @@ class DrugPage(ctk.CTkFrame):
             highlightthickness=0,
             activebackground="#FFFFFF",
             command=lambda: self.back())
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
         self.title = ctk.CTkLabel(self, text="เลือกยาที่ต้องการนำออก", 
                                   font=("Noto Sans Thai", 24, "bold"), 
                                   text_color="#035E5A",
                                   bg_color="transparent")
-        self.title.place(relx=0.10, rely=0.065)
+        self.title.place(relx=0.10, rely=0.050)
 
         self.shadow = ctk.CTkLabel(
             master=self,

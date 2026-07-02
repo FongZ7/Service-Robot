@@ -40,7 +40,7 @@ class VerifyPage(ctk.CTkFrame):
             activebackground="#FFFFFF",
             command=lambda: self.backBtn_Onclick()
         )
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
         # Centered Container Frame
         self.container = ctk.CTkFrame(self, fg_color="transparent")

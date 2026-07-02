@@ -42,7 +42,7 @@ class CloseDoorNotify(ctk.CTkFrame):
             command=self.back
 
         )
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
         self.notify = ctk.CTkLabel(self, 
                                    corner_radius=None, 

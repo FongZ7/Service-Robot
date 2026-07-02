@@ -86,7 +86,7 @@ class BarcodePage(ctk.CTkFrame):
             activebackground=self.cget('fg_color'),
             command=self.back
         )
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
         self.content_frame = ctk.CTkFrame(self, width=700, height=450, fg_color="#FFFFFF")
         self.content_frame.place(relx=0.5, rely=0.55, anchor="center")

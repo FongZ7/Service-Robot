@@ -39,7 +39,7 @@ class ExportPage(ctk.CTkFrame):
             command=self.back
         )
 
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
         self.box = ctk.CTkLabel(self, corner_radius=None, bg_color="transparent", image=self.box_img, text=None)
         self.box.place(relx=0.5, rely=0.45, anchor="center")
 

@@ -33,7 +33,7 @@ class ReSlotInPage(ctk.CTkFrame):
             resized_back = pil_back.resize((70, 55), Image.Resampling.LANCZOS)
             self.back_img = ImageTk.PhotoImage(resized_back)
 
-            self.ward_img = ctk.CTkImage(light_image=Image.open("C:/Service_Robot/UI/assets/slot_page/wardList.png"), size=(860, 110)) 
+            self.ward_img = ctk.CTkImage(light_image=Image.open("C:/Service_Robot/UI/assets/slot_page/wardList.png"), size=(750, 90)) 
             
             self.popup_img = ctk.CTkImage(light_image=Image.open("C:/Service_Robot/UI/assets/slot_page/popup.png"), size=(400, 158))
             self.notifytakeout_img = ctk.CTkImage(light_image=Image.open("C:/Service_Robot/UI/assets/slot_page/notifyTakeout.png"), size=(300, 170))
@@ -54,7 +54,7 @@ class ReSlotInPage(ctk.CTkFrame):
             activebackground="#FFFFFF", 
             command=self.back
         )
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
         self.title = ctk.CTkLabel(
             self, 
@@ -63,7 +63,7 @@ class ReSlotInPage(ctk.CTkFrame):
             text_color="#035E5A",
             bg_color="transparent"
         )
-        self.title.place(relx=0.10, rely=0.065) 
+        self.title.place(relx=0.10, rely=0.050) 
 
         self.freeSlot = ctk.CTkLabel(
             self,
@@ -72,7 +72,7 @@ class ReSlotInPage(ctk.CTkFrame):
             text_color='#035E5A',
             bg_color="transparent"
         )      
-        self.freeSlot.place(relx=0.95, rely=0.07, anchor="ne")
+        self.freeSlot.place(relx=0.95, rely=0.050, anchor="ne")
 
 
         self.slotFrame = Frame(self, background="#FFFFFF")

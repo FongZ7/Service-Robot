@@ -43,7 +43,7 @@ class SlotPage(ctk.CTkFrame):
             resized_back = pil_back.resize((70, 55), Image.Resampling.LANCZOS)
             self.back_img = ImageTk.PhotoImage(resized_back)
 
-            self.ward_img = ctk.CTkImage(light_image=Image.open(r"C:\Service_Robot\UI\assets\slot_page\wardList.png"), size=(860, 110))
+            self.ward_img = ctk.CTkImage(light_image=Image.open(r"C:\Service_Robot\UI\assets\slot_page\wardList.png"), size=(750, 90))
         except Exception as e:
             print(f"Error loading images in SlotPage: {e}")
             self.back_img = None
@@ -61,7 +61,7 @@ class SlotPage(ctk.CTkFrame):
             activebackground="#FFFFFF",
             command=lambda: self.back()
         )
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
         self.guide_text = ctk.CTkLabel(
             self,
@@ -70,7 +70,7 @@ class SlotPage(ctk.CTkFrame):
             text_color='#035E5A',
             bg_color="transparent"
         )
-        self.guide_text.place(relx=0.10, rely=0.065)
+        self.guide_text.place(relx=0.10, rely=0.050)
 
         self.freeSlot = ctk.CTkLabel(
             self,
@@ -79,7 +79,7 @@ class SlotPage(ctk.CTkFrame):
             text_color='#035E5A',
             bg_color="transparent"
         )
-        self.freeSlot.place(relx=0.95, rely=0.07, anchor="ne")
+        self.freeSlot.place(relx=0.95, rely=0.050, anchor="ne")
 
         self.slotFrame = Frame(self, background="#FFFFFF")
         self.slotFrame.place(relx=0.5, rely=0.47, anchor="center")

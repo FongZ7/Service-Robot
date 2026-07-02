@@ -34,17 +34,17 @@ class CheckDrugPage(ctk.CTkFrame):
             master=self, text="", image=self.back_img, borderwidth=0,
             background="#FFFFFF", highlightthickness=0, activebackground="#FFFFFF",
             command=lambda: self.back())
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
         self.title = ctk.CTkLabel(self, text="ยาที่นำเข้าทั้งหมด", font=("Noto Sans Thai", 24, "bold"), text_color="#035E5A", bg_color="transparent")
-        self.title.place(relx=0.10, rely=0.065)
+        self.title.place(relx=0.10, rely=0.050)
 
         self.addDrugBtn = ctk.CTkButton(self, text="เพิ่มยา", font=("Noto Sans Thai", 18, "bold"), 
                                         corner_radius=10, width=120, height=40,
                                         bg_color="#FFFFFF", fg_color="#035E5A", text_color="#FFFFFF",
                                         image=self.add_img, compound="left", hover=False,
                                         command=self._on_addDrugBtn_click)
-        self.addDrugBtn.place(relx=0.82, rely=0.03)
+        self.addDrugBtn.place(relx=0.82, rely=0.050)
 
         self.shadow = ctk.CTkLabel(master=self, image=self.template_img, text=None)
         self.shadow.place(relx=0.5, rely=0.48, anchor="center")

@@ -39,7 +39,7 @@ class ImportPage(ctk.CTkFrame):
             activebackground="#FFFFFF",
             command=self.back
         )
-        self.back_btn.place(relx=0.00, rely=0.06)
+        self.back_btn.place(relx=0.00, rely=0.04)
 
 
         self.box = ctk.CTkLabel(self, 
