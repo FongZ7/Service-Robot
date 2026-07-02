@@ -98,11 +98,11 @@ class BarcodePage(ctk.CTkFrame):
         self.lbl_instruction = ctk.CTkLabel(self.content_frame, text='นำ QR code ของยามาแสดงตรงจุดสแกน', **self.font_styte)
         self.lbl_instruction.place(relx=0.5, rely=0.85, anchor="center")
 
-        self.import_popup = SlidePopupImport(self.content_frame)
+        self.import_popup = SlidePopupImport(self)
         self.import_popup.confirm_btn.configure(command = self._on_confirm_popupclick)
         self.import_popup.add_btn.configure(command = self._on_add_popupclick)
 
-        self.export_popup = SlidePopupExport(self.content_frame)
+        self.export_popup = SlidePopupExport(self)
         self.export_popup.confirm_btn.configure(command = self._on_confirm_popupclick)
 
         self.finish_btn = ctk.CTkButton(self.content_frame, 

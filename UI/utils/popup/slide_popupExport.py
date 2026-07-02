@@ -35,9 +35,9 @@ class SlidePopupExport(ctk.CTkFrame):
         self.patienHN = "123456789"
         
         self.x_pos = 0.5
-        self.start_pos = 1.5
-        self.end_pos = 0.5 
-        self.place(relx=self.x_pos, rely=self.start_pos, anchor="center")
+        self.start_pos = 2.0
+        self.end_pos = 1.0 
+        self.place(relx=self.x_pos, rely=self.start_pos, anchor="s")
         
         self.create_widgets()
         
@@ -76,21 +76,21 @@ class SlidePopupExport(ctk.CTkFrame):
     def slide_up(self):
         self.lift()
         if self.start_pos > self.end_pos:
-            self.start_pos -= 0.06  
-            self.place(relx=self.x_pos, rely=self.start_pos, anchor="center")
+            self.start_pos -= 0.08  
+            self.place(relx=self.x_pos, rely=self.start_pos, anchor="s")
             self.after(10, self.slide_up)
         else:
-            self.place(relx=self.x_pos, rely=self.end_pos, anchor="center")
+            self.place(relx=self.x_pos, rely=self.end_pos, anchor="s")
 
     def slide_down(self):
-        if self.start_pos < 1.5:
-            self.start_pos += 0.06
-            self.place(relx=self.x_pos, rely=self.start_pos, anchor="center")
+        if self.start_pos < 2.0:
+            self.start_pos += 0.08
+            self.place(relx=self.x_pos, rely=self.start_pos, anchor="s")
             self.after(10, self.slide_down)
 
     def reset_pos(self):
-        self.start_pos = 1.5
-        self.place(relx=self.x_pos, rely=self.start_pos, anchor="center")
+        self.start_pos = 2.0
+        self.place(relx=self.x_pos, rely=self.start_pos, anchor="s")
 
     def config_popupDetail(self, data):
         self.patientData = data
